@@ -1,0 +1,11 @@
+.projects {
+    height: 100%;
+
+    background-color: white;
+
+}
+
+.project-pics img {
+    width: 400px;
+    height: 200px;
+}
