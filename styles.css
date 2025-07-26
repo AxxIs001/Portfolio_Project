@@ -355,7 +355,31 @@ html {
     padding: 80px 10%;
     background-color: #f9f9f9;
     text-align: center;
+    height: 100vh; /* full viewport height */
+    overflow: hidden; /* prevent overflow from pushing into next section */
+    display: flex;
+    flex-direction: column;
 }
+
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    overflow-y: auto;
+    flex-grow: 1;
+    padding-right: 10px; /* optional scrollbar spacing */
+    margin-top: 40px;
+}
+
+.projects-grid::-webkit-scrollbar {
+    width: 8px;
+}
+
+.projects-grid::-webkit-scrollbar-thumb {
+    background: #ccc;
+    border-radius: 4px;
+}
+
 
 .project-header h2 {
     font-size: 2.5rem;
@@ -368,12 +392,7 @@ html {
     color: #666;
 }
 
-.projects-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 20px;
-    justify-content: center;
-}
+
 
 .project-box {
     background: #fff;
@@ -424,7 +443,8 @@ html {
 .contacts {
     background-color: white;
     text-align: center;
-    margin-top: -100px;
+    padding-top: 100px;
+    margin-top: 0; /* Make sure this is 0 or removed, allowing padding-top to create space */
 }
 
 .contacts-header h2 {
