@@ -15,9 +15,7 @@ html {
 
 #aboutMe {
     padding-top: 80px;
-    /* Adjust the padding to slightly more than the navbar height */
     margin-top: -80px;
-    /* Negative margin to counter the padding, so the section appears centered */
 }
 
 
@@ -168,7 +166,6 @@ html {
 .profile-section {
     display: flex;
     align-items: center;
-    margin-bottom: 50px;
 
 }
 
@@ -354,13 +351,6 @@ html {
 
 
 
-
-
-
-
-
-
-
 .projects {
     padding: 80px 10%;
     background-color: #f9f9f9;
@@ -376,7 +366,6 @@ html {
 .subtitle {
     font-size: 1.2rem;
     color: #666;
-    margin-bottom: 40px;
 }
 
 .projects-grid {
@@ -408,14 +397,12 @@ html {
 
 .project-box h3 {
     font-size: 1.5rem;
-    margin: 15px 0;
     color: #222;
 }
 
 .project-box p {
     font-size: 1rem;
     color: #555;
-    margin-bottom: 15px;
 }
 
 .project-link {
@@ -434,4 +421,98 @@ html {
 }
 
 
+.contacts {
+    background-color: white;
+    text-align: center;
+    margin-top: -100px;
+}
+
+.contacts-header h2 {
+    font-size: 3rem;
+    font-weight: bold;
+    color: #222;
+    margin-bottom: 10px;
+    letter-spacing: 1px;
+}
+
+.contacts-header .subtitle {
+    font-size: 1.25rem;
+    color: #555;
+    margin-bottom: 60px;
+}
+
+.contacts-container {
+    max-width: 800px;
+    margin: 0 auto;
+    background-color: #fff;
+    padding: 40px 50px;
+    border-radius: 16px;
+    box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.1);
+    text-align: left;
+}
+
+.contacts-info {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.contacts-info p {
+    font-size: 18px;
+    color: #333;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.contacts-info strong {
+    color: #007bff;
+    min-width: 90px;
+}
+
+.contacts-info a {
+    color: #007bff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.contacts-info a:hover {
+    color: #0056b3;
+    text-decoration: underline;
+}
+
+/* Optional: icons before text using emojis or FontAwesome icons if you prefer */
+.contacts-info p::before {
+    font-family: Arial, sans-serif;
+    margin-right: 10px;
+    font-size: 20px;
+    color: #007bff;
+}
+
+.contacts-info p:nth-child(1)::before { content: "👤"; }
+.contacts-info p:nth-child(2)::before { content: "📧"; }
+.contacts-info p:nth-child(3)::before { content: "📞"; }
+.contacts-info p:nth-child(4)::before { content: "📍"; }
+.contacts-info p:nth-child(5)::before { content: "🔗"; }
+.contacts-info p:nth-child(6)::before { content: "💻"; }
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .contacts-container {
+        padding: 25px 20px;
+    }
+
+    .contacts-info p {
+        font-size: 16px;
+    }
+
+    .contacts-header h2 {
+        font-size: 2.2rem;
+    }
+
+    .contacts-header .subtitle {
+        font-size: 1rem;
+    }
+}
 
